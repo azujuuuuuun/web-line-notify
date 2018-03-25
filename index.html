@@ -12,12 +12,12 @@
     <section>
       <h2>このページについて</h2>
       <p><a href="https://notify-bot.line.me/ja/">LINE Notify</a>をWebで使えるページです。</p>
-      <form>
+      <form action="send_line.php" method="post">
         <label for="access-token">アクセストークン</label>
         <input type="text" name="access-token"/>
         <label for="message">メッセージ</label>
         <textarea name="message"></textarea>
-        <button id="send-button">送信</button>
+        <button type="submit">送信</button>
       </form>
     </section>
   </main>
