@@ -19,19 +19,20 @@
           <h2>このページについて</h2>
           <p><a href="https://notify-bot.line.me/ja/">LINE Notify</a>を使えるWebページです。</p>
         </div>
-        <form class="line-notify-form" action="send_line.php" method="post">
+        <form class="line-notify-form">
           <div class="access-token">
             <label class="label" for="access-token">アクセストークン</label>
             <input id="access-token" type="text" name="access-token"/>
           </div>
           <div class="message">
             <label class="label" for="message">メッセージ</label>
-            <textarea name="message"></textarea>
+            <textarea id="message" name="message"></textarea>
           </div>
-          <button class="send-button" type="submit">送信</button>
+          <button id="send-button" class="send-button" type="button">送信</button>
         </form>
       </section>
     </main>
+    <div id="result"></div>
     <footer class="footer">
       <p class="copyright">©Copyright azujuuuuuun(jun). All rights reserved.</p>
     </footer>
