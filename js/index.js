@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
           } else if (responseText.status === 401 && responseText.message === 'Invalid access token') {
             alert('エラー：無効なアクセストークンです。');
           } else {
-            alert('送信に失敗しました。');
+            alert('エラー：送信に失敗しました。');
           }
           result.textContent = xhr.responseText;
         } else {
