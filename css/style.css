@@ -92,6 +92,14 @@ body {
   background-color: #999;
 }
 
+.data {
+  margin-top: 30px;
+}
+
+.data div {
+  margin-top: 5px;
+}
+
 .footer {
   bottom: 0;
   height: 30px;
